@@ -1,0 +1,2 @@
+docker build -t ruoyiback .
+docker run  --network=gamepp -d --name ruoyiback -p 8081:8081  -v /home/upload:/home/upload  -v /etc/timezone:/etc/timezone -v /etc/localtime:/etc/localtime --privileged=true  ruoyiback

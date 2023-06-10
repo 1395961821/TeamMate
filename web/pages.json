@@ -1,0 +1,162 @@
+{
+	//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}, {
+			"path": "pages/classification/classification",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/add/add",
+			"style": {
+				"navigationBarTitleText": "添加",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	//分包加载配置，此配置为小程序的分包加载机制。
+	"subPackages": [{
+		"root": "pagea", //子包的根目录
+		"pages": [{ //这里的配置路径和pages里的一样
+				"path": "fastmatching/fastmatching", //配置页面路径，这里要注意，因为root已经选中了文件夹，所以我们只要填写文件名就好
+				"style": {
+					"navigationBarTitleText": "心动匹配",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"pagePath": "pages/agreement/agreement",
+				"style": {
+					"navigationBarTitleText": "用户服务协议",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "personinfo/personinfo",
+				"style": {
+					"navigationBarTitleText": "个人详细",
+					"enablePullDownRefresh": false
+				}
+			}, {
+				"path": "search/search",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+
+			}
+
+			, {
+				"path": "initiationhistory/initiationhistory",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+
+			}
+
+			, {
+				"path": "histor/histor",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "payattention/payattention",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+			}, {
+				"path": "detailpage/detailpage",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+			}, {
+				"path": "webview/webview",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "photowall/photowall",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "privacy/privacy",
+				"style": {
+					"navigationBarTitleText": "隐私政策",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "agreement/agreement",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+
+			}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "匹配组队",
+		"navigationBarBackgroundColor": "#111118",
+		"backgroundColor": "#161622",
+		"app-plus": {
+			"titleNView": false // 取消原生tab导航栏 
+		}
+	},
+	"tabBar": {
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/classification/classification",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/add/add",
+				"text": ""
+			},
+			{
+				"pagePath": "pages/message/message",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的"
+			}
+		]
+	}
+
+}

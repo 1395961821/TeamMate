@@ -1,0 +1,10 @@
+#依赖的父镜像
+FROM openjdk:17
+#作者
+MAINTAINER fanzhuoxi
+#jar包添加到镜像中
+ADD firstjob.jar first.jar
+#容器暴露的端口 即jar程序在容器中运行的端口
+EXPOSE 8080
+#容器启动之后要执行的命令
+ENTRYPOINT ["java","-jar","first.jar"]

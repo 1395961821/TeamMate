@@ -1,0 +1,1 @@
+docker run --network=gamepp -d --name redis -p 6379:6379 redis --requirepass "9192939495"

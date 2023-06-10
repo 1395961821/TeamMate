@@ -1,0 +1,6 @@
+1.安装,并且配置为gamepp的网卡
+sudo docker run --network=gamepp -p 6033:3306 --name mysql -v /usr/local/docker/mysql/mysql-files:/var/lib/mysql-files -v /usr/local/docker/mysql/conf:/etc/mysql -v /usr/local/docker/mysql/logs:/var/log/mysql -v /usr/local/docker/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=9192939495 -d mysql:8.0.23
+2.导入sql
+SOURCE /path/to/sql/file.sql;
+3.exit
+4.设置自启动

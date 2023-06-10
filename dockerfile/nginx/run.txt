@@ -1,0 +1,8 @@
+docker build -t zfnginx .
+docker run -d \
+  --name zfnginx \
+  -p 80:80 \
+  -p 443:443 \
+  -v /home/dockerfile/nginx/zd.zuimeng6.cn.pem:/etc/nginx/ssl/zd.zuimeng6.cn.pem \
+  -v /home/dockerfile/nginx/zd.zuimeng6.cn.key:/etc/nginx/ssl/zd.zuimeng6.cn.key \
+  zfnginx

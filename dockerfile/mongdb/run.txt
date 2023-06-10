@@ -1,0 +1,11 @@
+1.部署
+docker run --network=gamepp -d --name mongo-container -p 27017:27017 mongo
+2.运行
+sudo docker exec -it mongo mongosh
+3.创建数据库
+use comment
+4.绑定账号密码
+comment> db.createUser({ user: "cld", pwd: "cld", roles: [{ role: "readWrite", db: "comment" }] })
+5.自启动
+docker update --restart=always mongo
+6.重新运行
